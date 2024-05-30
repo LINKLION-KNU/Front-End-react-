@@ -1,5 +1,7 @@
 import React from 'react';
 import './Header.css';
+import loginIcon from '../assets/login-icon.png'; 
+
 
 const Header = () => (
   <header className="header">
@@ -15,7 +17,7 @@ const Header = () => (
     </nav>
     <div className="login">
       <a href="/login">
-        <span className="icon">👤</span> 로그인
+        <img src={loginIcon} alt="로그인 아이콘" className="login-icon" /> 로그인
       </a>
     </div>
   </header>

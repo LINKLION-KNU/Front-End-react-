@@ -66,6 +66,8 @@
   align-items: center;
 }
 
-.login .icon {
+.login .login-icon {
+  width: 15px; 
+  height: 15px; 
   margin-right: 8px;
 }
