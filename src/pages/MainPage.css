@@ -1,14 +1,10 @@
-.main-container {
-  margin-top: 80px;
-  text-align: center;
-}
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 10px);
   color: white;
   position: relative;
 }
@@ -19,6 +15,7 @@
 
 .title-section h2 {
   font-size: 64px;
+  text-align: center;
   font-weight: bold;
   margin: 0;
   background: linear-gradient(to left, #3B5F96, #FFFFFF);
@@ -28,6 +25,7 @@
 
 .title-section p {
   font-size: 20px;
+  text-align: center;
   margin-top: 60px;
 }
 
