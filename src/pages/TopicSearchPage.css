@@ -1,0 +1,15 @@
+.topic-search-page {
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  
+  .search-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  

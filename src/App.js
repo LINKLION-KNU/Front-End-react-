@@ -1,16 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
+import TopicSearchPage from './pages/TopicSearchPage';
 import './App.css';
+import './transitions.css';
 
-const App = () => (
+const App = () => {
+  const location = useLocation();
+
+  return (
+    <TransitionGroup>
+      <CSSTransition key={location.key} classNames="fade" timeout={300}>
+        <Routes location={location}>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/search" element={<TopicSearchPage />} />
+        </Routes>
+      </CSSTransition>
+    </TransitionGroup>
+  );
+};
+
+const AppWrapper = () => (
   <Router>
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/login" element={<LoginPage />} />
-    </Routes>
+    <App />
   </Router>
 );
 
-export default App;
+export default AppWrapper;

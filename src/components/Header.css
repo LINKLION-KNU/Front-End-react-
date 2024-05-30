@@ -15,6 +15,23 @@
   box-sizing: border-box;
 }
 
+.header-alt {
+  background-color: #fff;
+  color: black;
+}
+
+.header-alt .nav a {
+  color: black;
+}
+
+.header-alt .nav a.active {
+  border-bottom: 2px solid black;
+}
+
+.header-alt .login a {
+  color: black;
+}
+
 .logo {
   flex: 1;
 }
@@ -52,6 +69,10 @@
   border-bottom: 2px solid white;
 }
 
+.header-alt .nav a:hover, .header-alt .nav a.active {
+  border-bottom: 2px solid black;
+}
+
 .login {
   flex: 1;
   display: flex;
@@ -66,8 +87,21 @@
   align-items: center;
 }
 
+.header-alt .login a {
+  color: black;
+}
+
 .login .login-icon {
-  width: 15px; 
-  height: 15px; 
+  width: 15px;
+  height: 15px;
   margin-right: 8px;
+}
+
+.nav-bar {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(197, 197, 197);
 }
