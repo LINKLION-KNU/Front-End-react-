@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
 import TopicSearchPage from './pages/TopicSearchPage';
+import MyScrapPage from './pages/MyScrapPage';
 import './App.css';
 import './transitions.css';
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<MainPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/search" element={<TopicSearchPage />} />
+          <Route path="/my" element={<MyScrapPage />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
